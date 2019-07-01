@@ -1,0 +1,140 @@
+<!-- gitHub all information. Command program. This is git run program code-->
+<!-- Go to more information www.pepocoder.com -->
+
+git --version <!-- git install info -->
+
+
+
+
+
+<!-- For Global -->
+git init
+git config --global user.masum <!-- Enter you Name --> 
+git config --global user.contact@pepocoder.com <!-- Enter your Email -->
+
+
+
+
+<!-- For Not Global -->
+git init
+git config user.masum <!-- Enter you Name --> 
+git config user.contact@pepocoder.com <!-- Enter your Email -->
+
+
+
+
+<!-- User & Email set -->
+git config --list
+
+
+
+
+<!-- For all Clear -->
+clear
+
+
+
+
+
+<!-- For see all status -->
+git status
+
+
+
+
+
+<!-- For git upload -->
+git init
+git add <!-- file name -->
+    <!-- add all files or folder -->
+    git add --all
+	Or 
+	git add.
+git commit -m "add your new commit" <!-- For new commit -->
+
+
+
+
+git log <!-- For all commit show -->
+git log --oneline <!-- For all commit show to shortly -->
+git checkout (Serial Number) <!-- For delete word -->
+git checkout master
+git diff <!-- For latest change show -->
+git show (Serial Number) <!-- For show all file details -->
+git diff (1st serial number and 2nd serial number) <!-- For findout between different -->
+git diff --staged
+git rm "File name" <!-- For detele file -->
+git reset HEAD "File Name" <!-- For Unstaged -->
+
+
+
+
+
+<!-- "PUSH" without User & Password  -->
+ssh-keygen -t rsa -b 4096 -c "Email"
+New-Name <!-- For SSH key -->
+New-password <!-- Not same to gitHub account or as your like -->
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+Again Password
+clip < ~/.ssh/id_rsa.pub <!-- For copy Key -->
+
+And lastly go to your gitHub accoutn and add this key
+
+
+
+
+
+<!-- CLONE -->
+git clone (Past url from gitHub) <!-- For download file -->
+git clone (past url from gitHub) "Enter New Name" <!-- For creata New-Name -->
+
+
+
+
+
+<!-- FETACH -->
+git status
+git fetch <!-- Findout change from gitHub -->
+Input Password
+git pull <!-- Show change from gitHub -->
+Input Password
+
+
+
+
+
+<!-- BRANCH -->
+git branch (New-Name)
+git branch
+gti checkout (Name) <!-- For switched to branc -->h
+git checkout -b (New-branch) <!-- For automatic switched to New Branch -->
+
+git add.
+git commit -m "New commit"
+git checkout (Name) <!-- For switched branch -->
+git merge (Name) <!-- For add with master branch -->
+gti branch -D (Name) <!-- For delete branch -->
+gti branch <!-- For check branch -->
+
+
+
+
+
+<!-- STASH -->
+gti init
+git commit -m "Enter New Commit"
+git status
+git stash
+git stash pop <!-- For show all word -->
+git stash
+git stash pop/apply <!-- For show word -->
+git stash list <!-- For show all stash -->
+
+git status
+gti clear -f -n <!-- For delete all untracked -->
+gti clear -f
+
+git status
+touch .gitignore
+*.(File Name) <!-- For commit ignore-->
